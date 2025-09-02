@@ -26,9 +26,6 @@
   }
 
   @media (max-width: $desktop) {
-    margin-left: -12px;
-    grid-template-columns: repeat(2, auto);
-
     img {
       margin-left: 12px;
       margin-bottom: 12px;
