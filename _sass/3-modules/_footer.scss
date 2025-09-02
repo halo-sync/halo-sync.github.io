@@ -48,7 +48,8 @@
   gap: 40px 120px;
 
   @media (max-width: $desktop) {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__navigation__title {
@@ -120,7 +121,7 @@
 /* Copyright */
 .copyright {
   padding: 32px 0;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--heading-font-color);
 
   a {
