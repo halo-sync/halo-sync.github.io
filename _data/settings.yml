@@ -1,0 +1,95 @@
+#-------------------------------
+# Site Settings
+title: HaloSync
+description: From connection to success
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Solutions"
+      url: "/solutions"
+    - title: "Resources"
+      url: "/resources"
+    - title: "Company"
+      url: "/company"
+    - title: "FAQs"
+      url: "/faqs"
+    - title: "Blog"
+      url: "/posts"
+
+
+#-------------------------------
+# Partners
+partners:
+  - name: "Lufthansa"
+    iata: "LH"
+  - name: "Swiss"
+    iata: "LX"
+  - name: "Austrian Airlines"
+    iata: "OS"
+  - name: "Emirates"
+    iata: "EK"
+  - name: "American Airlines"
+    iata: "AA"
+  - name: "Hawaiian Airlines"
+    iata: "HA"
+  - name: "Singapore Airlines"
+    iata: "SQ"
+  - name: "Qatar Airways"
+    iata: "QR"
+  - name: "Finnair"
+    iata: "AY"
+  - name: "British Airways"
+    iata: "BA"
+  - name: "Air France"
+    iata: "AF"
+  - name: "KLM"
+    iata: "KL"
+  - name: "Scoot"
+    iata: "TR"
+  - name: "Korean Air"
+    iata: "KE"
+  - name: "Turkish Airlines"
+    iata: "TK"
+  - name: "Jetstar"
+    iata: "JQ"
+  - name: "Alaska Airlines"
+    iata: "AS"
+
+
+#-------------------------------
+# Clients
+clients:
+  - name: "Tourvis"
+    image: "/images/clients/tourvis.svg"
+  - name: "Privia"
+    image: "/images/clients/privia.svg"
+  - name: "Kyte"
+    image: "/images/clients/kyte.svg"
+  - name: "Tourvis Biz"
+    image: "/images/clients/tourvis-biz.svg"
+
+
+#-------------------------------
+# Testimonials Section Settings
+testimonial_items:
+  - name: "Boris Darceaux"
+    image: "/images/quotes/air-france-klm.jpg"
+    designation: "General Manager Korea, Japan & New Caledonia"
+    from: "Air France-KLM"
+    title: ""
+    content : "We are delighted to establish the first NDC direct connection in Asia with Tidesquare Tourvis.  This partnership allows us to deliver more diverse and innovative travel products and services to our customers.  We look forward to continued collaboration on future offerings."
+
+  - name: "Donghwan Kim"
+    image: "/images/quotes/finair.png"
+    designation: "Country Manager Korea"
+    from: "Finnair"
+    title: ""
+    content : "At Finnair, we continue to position NDC as a key initiative in modernizing airline product distribution.  We are pleased to have implemented a direct NDC API connection in collaboration with our valued partner, Tidesquare.  This newly established connection, developed in partnership with a skilled and professional team, enables us to offer customers an enhanced shopping experience and full access to Finnair's network with our most competitive fares."
+
+
+#-------------------------------
+# Google Analytics
+google_analytics: # Add your GA Tracking Id

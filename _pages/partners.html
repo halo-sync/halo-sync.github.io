@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="page__head">
+    <div class="container">
+        <h1 class="page__title">Partners</h1>
+        <div class="page__description">Trusted by the world's leading airlines.</div>
+        <hr>
+    </div>
+</div>
+
+<section class="section projects animate">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div class="section__gallery">
+                    <div class="gallery-box">
+                        <div class="gallery">
+                            {% assign displayed_projects = 0 %}
+                            {% for partner in site.data.settings.partners %}
+                            {% assign displayed_projects = displayed_projects | plus: 1 %}
+                            <img src="/images/partners/rectangle/{{ partner.iata }}.svg" loading="lazy"
+                                 alt="{{ partner.name }}">
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

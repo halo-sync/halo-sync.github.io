@@ -1,0 +1,32 @@
+<section class="section projects animate">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div class="section__info section__info__center">
+                    <div class="section__head">
+                        <span class="section__intro">Trusted by the world's leading airlines</span>
+                        <h2 class="section__title">Partners</h2>
+                    </div>
+                </div>
+                <div class="section__gallery">
+                    <div class="gallery-box">
+                        <div class="gallery">
+                            {% assign displayed_projects = 0 %}
+                            {% for partner in site.data.settings.partners %}
+                            {% assign displayed_projects = displayed_projects | plus: 1 %}
+                            <img src="/images/partners/rectangle/{{ partner.iata }}.svg" loading="lazy"
+                                 alt="{{ partner.name }}">
+                            {% if displayed_projects >= 12 %}
+                            {% break %}
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section__navigation">
+        <a href="/partners" class="section__link">View all<i class="ri-arrow-right-s-line"></i></a>
+    </div>
+</section>

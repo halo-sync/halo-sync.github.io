@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="page__head">
+    <div class="container">
+        <h1 class="page__title">Blog</h1>
+        <div class="page__description">Read the latest posts about HaloSync.</div>
+        <hr>
+    </div>
+</div>
+
+<div class="container">
+    <div class="explore-tags">
+        <div class="tag-cloud">
+            {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless
+            %}{% endfor %}{% endcapture %}
+            {% assign tag_words = site_tags | split:',' | sort %}
+            {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+            {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+            <a href="{{ site.baseurl }}/tags/?tag={{ this_word | cgi_escape }}">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>
+            {% endunless %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="row grid">
+            {% if site.posts.size > 0 %}
+            {% for post in paginator.posts offset:0 %}
+            {% include article.html %}
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    {% include pagination.html %}
+</section>

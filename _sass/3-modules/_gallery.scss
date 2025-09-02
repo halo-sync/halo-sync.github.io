@@ -1,0 +1,38 @@
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-content: center;
+  margin-left: -16px;
+  margin-bottom: 16px;
+
+  img {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: calc(100% - 16px);
+    border-radius: 16px;
+  }
+
+  .gallery__image {
+    background: var(--background-color);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    margin-left: -12px;
+    grid-template-columns: repeat(2, auto);
+
+    img {
+      margin-left: 12px;
+      margin-bottom: 12px;
+      width: calc(100% - 12px);
+    }
+  }
+}

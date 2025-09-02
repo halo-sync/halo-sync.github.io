@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="page__head">
+    <div class="container">
+        <h1 class="page__title">FAQs</h1>
+        <div class="page__description">If you didn't find the answer to your question, please <a href="/contact">contact
+            us</a>.
+        </div>
+        <hr>
+    </div>
+</div>
+
+<section class="section section-faq animate">
+    <div class="container">
+        <div class="tabs">
+            <a class="tab active" data-tab="tab1">General</a>
+            <a class="tab" data-tab="tab2">Registration & onboarding</a>
+            <a class="tab" data-tab="tab3">Product & features</a>
+            <a class="tab" data-tab="tab4">Support</a>
+        </div>
+        <div class="tab-content active" id="tab1">
+            <div class="faq">
+                {% include section-faqs-tab1.html %}
+            </div>
+        </div>
+        <div class="tab-content" id="tab2">
+            <div class="faq">
+                {% include section-faqs-tab2.html %}
+            </div>
+        </div>
+        <div class="tab-content" id="tab3">
+            <div class="faq">
+                {% include section-faqs-tab3.html %}
+            </div>
+        </div>
+        <div class="tab-content" id="tab4">
+            <div class="faq">
+                {% include section-faqs-tab4.html %}
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{{ site.baseurl }}/js/tabs.js"></script>

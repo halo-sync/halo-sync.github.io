@@ -1,0 +1,20 @@
+.solution {
+  box-shadow: 0 0 0 1px var(--border-color) inset;
+  border-radius: 16px;
+
+  img {
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+.solution__title {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.solution__content {
+  padding: 16px;
+}

@@ -1,0 +1,112 @@
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: $desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.benefit {
+  text-align: center;
+
+  i {
+    font-size: 32px;
+  }
+}
+
+.benefit__icon {
+  background: linear-gradient(45deg, #083C8F, #BB18EC);
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.benefit__title {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.benefit__content {
+  padding: 8px;
+}
+
+.two__columns__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.two__columns__section:last-child {
+  margin-bottom: 0;
+}
+
+.two__columns__section:nth-child(even) .two__columns__image {
+  order: 2;
+}
+
+.two__columns__section:nth-child(even) .two__columns__content {
+  order: 1;
+}
+
+.two__columns__image {
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.two__columns__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="70" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .two__columns__container {
+    padding: 20px 15px;
+  }
+
+  .two__columns__section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .two__columns__section:nth-child(even) .two__columns__image {
+    order: 1;
+  }
+
+  .two__columns__section:nth-child(even) .two__columns__content {
+    order: 2;
+  }
+
+  .two__columns__image {
+    height: 280px;
+  }
+
+  .two__columns__content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
