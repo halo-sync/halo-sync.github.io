@@ -30,6 +30,10 @@
 .logo__image {
   max-height: 32px;
   transition: all .3s ease;
+
+  @media (max-width: $desktop) {
+    max-height: 28px;
+  }
 }
 
 .scrolled {
