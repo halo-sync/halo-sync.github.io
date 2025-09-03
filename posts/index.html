@@ -18,7 +18,7 @@ layout: default
             {% assign tag_words = site_tags | split:',' | sort %}
             {% for item in (0..site.tags.size) %}{% unless forloop.last %}
             {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-            <a href="{{ site.baseurl }}/tags/?tag={{ this_word | cgi_escape }}">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>
+            <a href="{{ site.baseurl }}/tags?tag={{ this_word | cgi_escape }}">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>
             {% endunless %}
             {% endfor %}
         </div>
